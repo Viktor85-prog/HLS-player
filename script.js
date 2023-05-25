@@ -1,5 +1,7 @@
+var video = document.getElementById('video');
+var el = document.getElementById('update');
+
 if (Hls.isSupported()) {
-	var video = document.getElementById('video');
 	var hls = new Hls();
 	hls.loadSource('https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8');
 	hls.attachMedia(video);
@@ -9,9 +11,7 @@ if (Hls.isSupported()) {
 	});
   }
 
-  var video = document.getElementById('video');
-  var el = document.getElementById('update');
-  
+
   window.onload = function () {
 
 	function foo() {
