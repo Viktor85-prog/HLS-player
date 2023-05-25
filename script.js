@@ -6,7 +6,7 @@ if (Hls.isSupported()) {
 	hls.loadSource('https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8');
 	hls.attachMedia(video);
 	hls.on(Hls.Events.MEDIA_ATTACHED, function () {
-	  video.muted = true;
+	//   video.muted = true;
 	  video.play();
 	});
   }
