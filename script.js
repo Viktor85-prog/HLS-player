@@ -25,8 +25,8 @@ if (Hls.isSupported()) {
 			}
 		}
 		el.innerHTML =
-			'<div>currentTime:' + pos + '</div>'+ 
-			'<div>buffered:' + bufferLen + '</div>'+ 
+			'<div>currentTime:' + pos.toFixed(2) + '</div>'+ 
+			'<div>buffered:' + bufferLen.toFixed(2) + '</div>'+ 
 			'<div>decoded:' + video.webkitDecodedFrameCount + '</div>'+
 			'<div>dropped:' + video.webkitDroppedFrameCount + '</div>';
 		window.requestAnimationFrame(foo);
