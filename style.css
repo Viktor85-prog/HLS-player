@@ -1,5 +1,75 @@
-body {
-	width: 80%;
-	margin-left: auto;
-    margin-right: auto;
-}
+html {
+	box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+
+  body {
+	width: 1000px;
+	margin: 50px auto;
+	padding: 0;
+	/* display: flex; */
+	/* min-height: 100vh; */
+	/* background-size: cover; */
+	align-items: center;
+	/* justify-content: center; */
+  }
+
+  .m-10 {
+	margin: 20px;
+  }
+
+  .player {
+	max-width: 750px;
+	border: 5px solid rgba(0,0,0,0.2);
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	position: relative;
+	font-size: 0;
+	overflow: hidden;
+  }
+
+  .player:fullscreen {
+	max-width: none;
+	width: 100%;
+  }
+
+  .player__video {
+	width: 100%;
+  }
+
+  .player__controls {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	transform: translateY(100%) translateY(-5px);
+	transition: all .3s;
+	flex-wrap: wrap;
+	background: rgba(0,0,0,0.1);
+  }
+
+  .player__button {
+	background: none;
+	border: 0;
+	line-height: 1;
+	color: white;
+	text-align: center;
+	outline: 0;
+	padding: 0;
+	cursor: pointer;
+	max-width: 50px;
+  }
+
+  .player:hover .player__controls {
+	transform: translateY(0);
+  }
+  
+  .player:hover .progress {
+	height: 15px;
+  }
+  
+  .player__controls > * {
+	flex: 1;
+  }

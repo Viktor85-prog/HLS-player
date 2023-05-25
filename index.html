@@ -8,14 +8,16 @@
 	<link rel="stylesheet" href="./style.css" />
 </head>
 	<body>
-		<wrapper>
-			<h1>Домашнее задание CDNvideo. Фронтенд</h1>
-			<video height="600" id="video" controls>
-				<!-- <source src="https://playercdn.cdnvideo.ru/aloha/cdn-demo/static/caminandes_1.mp4" type="video/mp4"> -->
-			</video>
-			<div id="update"></div>
-		</wrapper>
+		<h1 class="m-10">Домашнее задание CDNvideo. Фронтенд</h1>
+		<div class="player">
+			<video class="player__video viewer" id="video"></video>
+			<div class="player__controls">
+				<button class="player__button toggle" title="Toggle Play">►</button>
+			</div>
+		</div>
+		<div class='m-10' id="update"></div>
 	</body>
 	<script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
 	<script src="./script.js"></script>
+	<script src="./customPlayer.js"></script>
 </html>
