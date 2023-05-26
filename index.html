@@ -6,11 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Домашнее задание CDNvideo. Фронтенд</title>
 	<link rel="stylesheet" href="./style.css" />
+	<!-- <link rel="stylesheet" href="./mediaControls.css" /> -->
 </head>
 	<body>
 		<h1 class="m-10">Домашнее задание CDNvideo. Фронтенд</h1>
 		<div class="player">
-			<video class="player__video viewer" id="video"></video>
+			<video class="player__video viewer" id="video" > Sorry, your browser doesn't support embedded videos.  Time to upgrade!</video>
 			<div class="player__controls">
 				<div class="progress">
 					<div class="progress__filled"></div>
@@ -18,6 +19,7 @@
 				<button class="player__button toggle" title="Toggle Play">►</button>
 				<input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
 				<input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+				<button class="player__button fullscreen__button" type="image"><img src="./fullscreen.png" alt=""></button>
 				<button data-skip="-10" class="player__button">« 10s</button>
 				<button data-skip="25" class="player__button">25s »</button>
 			</div>
